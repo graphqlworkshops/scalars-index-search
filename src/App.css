@@ -1,0 +1,138 @@
+body {
+  font-family: sans-serif;
+  padding: 1em;
+}
+
+h1 {
+  color: hsl(320, 77%, 55%);
+}
+
+.ais-SearchBox-input {
+  padding: 1.3rem 2.7rem;
+}
+.ais-SearchBox-submit {
+  left: 1.3rem;
+}
+.ais-SearchBox-reset {
+  right: 1.3rem;
+}
+.ais-SearchBox {
+  margin: 1em 0;
+}
+.ais-Pagination {
+  margin-top: 1em;
+}
+.left-panel {
+  float: left;
+  width: 250px;
+}
+.right-panel {
+  margin-left: 260px;
+}
+.ais-InstantSearch {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.ais-Hits-item {
+  margin-bottom: 1em;
+  width: calc(50% - 1rem);
+  position: relative;
+}
+
+.hit-name {
+  margin-bottom: 0.5em;
+  color: hsl(209, 61%, 16%);
+}
+.hit-scalars {
+  /* color: hsl(320, 77%, 55%); */
+  color: hsl(330, 72%, 65%);
+  font-size: 14px;
+  margin-bottom: 2.5rem;
+  margin-right: 3.5rem;
+}
+
+.hit-language {
+  color: hsl(211, 27%, 70%);
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.ais-PoweredBy {
+  float: right;
+}
+
+.ais-CurrentRefinements {
+  margin-bottom: 1rem;
+}
+
+.hit-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.open-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(184, 77%, 34%);
+  border: 1px solid hsl(184, 77%, 34%);
+  border-radius: 5px;
+  transition: background-color 0.2s ease-out;
+  outline: none;
+  text-decoration: none;
+}
+
+.open-button:hover {
+  background-color: hsl(185, 81%, 29%);
+}
+
+.add-button {
+  background-color: hsl(320, 85%, 65%);
+  border: 1px solid hsl(320, 85%, 65%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+  float: right;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: hsl(320, 77%, 55%);
+}
+
+.filters {
+  color: hsl(209, 28%, 39%);
+}
+
+.ais-RefinementList-labelText {
+  color: hsl(209, 28%, 49%);
+}
+
+.ais-ClearRefinements-button {
+  background-color: hsl(210, 22%, 49%);
+}
+
+.ais-ClearRefinements-button:hover {
+  background-color: hsl(210, 22%, 29%);
+}
+
+.ais-ClearRefinements-button--disabled {
+  background-color: hsl(210, 22%, 59%);
+}
+
+.ais-ClearRefinements-button--disabled:hover {
+  background-color: hsl(210, 22%, 59%);
+}
+
+.ais-CurrentRefinements-item {
+  background-color: hsl(210, 22%, 49%);
+}
