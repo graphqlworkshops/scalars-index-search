@@ -16,12 +16,12 @@ export function AddNewForm({ setModalOpen }) {
 
       <form
         className="modal-form"
-        name="add-new-package"
+        name="new_package"
         method="post"
+        action="/thanks"
         data-netlify="true"
-        action="/thanks.html"
       >
-        <input type="hidden" name="form-name" value="add-new-package" />
+        <input type="hidden" name="form-name" value="new_package" />
         <input
           type="text"
           name="name"
@@ -51,7 +51,7 @@ export function AddNewForm({ setModalOpen }) {
         <button
           className="modal-form-submit-button"
           type="submit"
-          title="Submit your search query."
+          title="Submit new package"
         >
           Submit
         </button>
