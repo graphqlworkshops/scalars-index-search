@@ -19,7 +19,7 @@ export function AddNewForm({ setModalOpen }) {
         name="add-new-package"
         method="post"
         data-netlify="true"
-        action="/thanks"
+        action="/thanks.html"
       >
         <input type="hidden" name="form-name" value="add-new-package" />
         <input
