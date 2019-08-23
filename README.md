@@ -22,9 +22,9 @@ Open http://localhost:3000 to see your app.
 
 - Responsive
 - Logo
-- Add NPM packages we know
 - Contribute Section - link to github
 - Workshops Link/Banner
 - Push to graphqlworkhops org
 - Deploy to Netlify
 - Icons
+- Note to package owners
