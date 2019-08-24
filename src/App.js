@@ -71,6 +71,12 @@ function App() {
           <Pagination />
 
           <PoweredBy />
+          <button
+            className="add-button-mobile"
+            onClick={() => setModalOpen(true)}
+          >
+            ADD NEW
+          </button>
         </div>
       </InstantSearch>
     </div>

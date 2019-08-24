@@ -50,3 +50,21 @@
 .modal-form-input:invalid {
   box-shadow: 0 0 5px 1px hsl(184, 77%, 34%);
 }
+
+@media screen and (max-width: 780px) {
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-form-input {
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
+    padding: 0.9rem 0.5rem;
+  }
+
+  .modal-form-submit-button {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.3rem;
+    font-size: 0.8rem;
+  }
+}
