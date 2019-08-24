@@ -1,10 +1,11 @@
 body {
   font-family: sans-serif;
   padding: 1em;
+  background-color: hsl(209, 21%, 97%);
 }
 
 h1 {
-  color: hsl(320, 77%, 55%);
+  color: hsla(320, 77%, 55%, 0.938);
 }
 
 .add-button {
@@ -59,6 +60,7 @@ h1 {
   margin-bottom: 1em;
   width: calc(50% - 1rem);
   position: relative;
+  background-color: hsl(209, 21%, 99%);
 }
 
 .hit-name {
