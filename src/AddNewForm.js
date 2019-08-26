@@ -4,7 +4,7 @@ import './add-new-form.css';
 export function AddNewForm({ setModalOpen }) {
   return (
     <>
-      <h2 class="modal-title">
+      <h2 className="modal-title">
         Add New Custom Scalar
         <button
           className="modal-close-button"

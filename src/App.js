@@ -16,6 +16,7 @@ import Modal from 'react-modal';
 import { AddNewForm } from './AddNewForm';
 import PropTypes from 'prop-types';
 import './App.css';
+import ReactGA from 'react-ga';
 
 const searchClient = algoliasearch(
   '8RFSWE8Z0J',
@@ -40,11 +41,19 @@ function App() {
     return false;
   }
 
+  function addNew() {
+    setModalOpen(true);
+    ReactGA.event({
+      category: 'User',
+      action: 'Add a New Scalar',
+    });
+  }
+
   return (
     <div className="ais-InstantSearch">
       <h1>
         GraphQL Custom Scalars{' '}
-        <button className="add-button" onClick={() => setModalOpen(true)}>
+        <button className="add-button" onClick={addNew}>
           ADD NEW
         </button>
       </h1>
