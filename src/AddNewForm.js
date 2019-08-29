@@ -24,7 +24,7 @@ export function AddNewForm({ setModalOpen }) {
           className="modal-form-input"
         />
         <input
-          type="url"
+          type="text"
           name="url"
           placeholder="Enter the url..."
           required
