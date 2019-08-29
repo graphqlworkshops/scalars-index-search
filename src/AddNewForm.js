@@ -21,11 +21,6 @@ export function AddNewForm({ setModalOpen }) {
         action="/thanks"
       >
         <input type="hidden" name="form-name" value="new_package" />
-        <p style={{ display: 'none' }}>
-          <label>
-            Don’t fill this out if you're human: <input name="bot-field" />
-          </label>
-        </p>
         <input
           type="text"
           name="name"
