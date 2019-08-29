@@ -14,7 +14,7 @@ export function AddNewForm({ setModalOpen }) {
         </button>
       </h2>
 
-      <form className="modal-form" name="scalar" method="post" action="/thanks">
+      <form className="modal-form" name="scalar" method="post">
         <input type="hidden" name="form-name" value="scalar" />
         <input
           type="text"
@@ -24,7 +24,7 @@ export function AddNewForm({ setModalOpen }) {
           className="modal-form-input"
         />
         <input
-          type="text"
+          type="url"
           name="url"
           placeholder="Enter the url..."
           required
