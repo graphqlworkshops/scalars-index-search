@@ -14,14 +14,8 @@ export function AddNewForm({ setModalOpen }) {
         </button>
       </h2>
 
-      <form
-        className="modal-form"
-        name="new_package"
-        method="post"
-        action="/thanks"
-        data-netlify="true"
-      >
-        <input type="hidden" name="form-name" value="new_package" />
+      <form className="modal-form" name="scalar" method="post" action="/thanks">
+        <input type="hidden" name="form-name" value="scalar" />
         <input
           type="text"
           name="name"

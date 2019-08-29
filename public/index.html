@@ -26,38 +26,12 @@
       You need to enable JavaScript to run this app.
     </noscript>
 
-    <form class="modal-form" name="new_package" netlify="true" hidden>
-      <input
-        type="text"
-        name="name"
-        placeholder="Enter the name of the package..."
-        required
-        class="modal-form-input"
-      />
-      <input
-        type="url"
-        name="url"
-        placeholder="Enter the url..."
-        required
-        className="modal-form-input"
-      />
-      <input
-        type="text"
-        name="scalars"
-        placeholder="Enter the scalars as comma separated values (JSON, Date, etc)..."
-        class="modal-form-input"
-      />
-      <input
-        type="text"
-        name="language"
-        placeholder="Enter the language (javascript, java, php, etc)..."
-        class="modal-form-input"
-      />
-      <button
-        class="modal-form-submit-button"
-        type="submit"
-        title="Submit new package"
-      >
+    <form name="scalar" netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="url" name="url" />
+      <input type="text" name="scalars" />
+      <input type="text" name="language" />
+      <button type="submit">
         Submit
       </button>
     </form>
