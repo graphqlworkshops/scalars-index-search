@@ -19,8 +19,6 @@ export function AddNewForm({ setModalOpen }) {
         name="new_package"
         method="post"
         action="/thanks"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="new_package" />
         <p style={{ display: 'none' }}>
