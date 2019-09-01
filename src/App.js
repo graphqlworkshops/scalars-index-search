@@ -5,7 +5,6 @@ import {
   Hits,
   SearchBox,
   Pagination,
-  Highlight,
   ClearRefinements,
   RefinementList,
   CurrentRefinements,
@@ -14,9 +13,9 @@ import {
 } from 'react-instantsearch-dom';
 import Modal from 'react-modal';
 import { AddNewForm } from './AddNewForm';
-import PropTypes from 'prop-types';
 import './App.css';
 import ReactGA from 'react-ga';
+import { Hit } from './Hit';
 
 const searchClient = algoliasearch(
   '8RFSWE8Z0J',
@@ -66,7 +65,7 @@ function App() {
       >
         <AddNewForm setModalOpen={setModalOpen} />
       </Modal>
-      <InstantSearch indexName="dev_SCALAR_NAME" searchClient={searchClient}>
+      <InstantSearch indexName="dev_SCALAR_NAME_v2" searchClient={searchClient}>
         <SearchBox />
         <div className="left-panel">
           <ClearRefinements />
@@ -91,35 +90,5 @@ function App() {
     </div>
   );
 }
-
-function Hit(props) {
-  return (
-    <div>
-      <div className="hit-name">
-        <Highlight attribute="name" hit={props.hit} />
-      </div>
-      <div className="hit-scalars">
-        <Highlight attribute="scalars" hit={props.hit} />
-      </div>
-      <div className="hit-language">
-        <Highlight attribute="language" hit={props.hit} />
-      </div>
-      <div className="hit-link">
-        <a
-          href={props.hit.readme}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="open-button"
-        >
-          Open
-        </a>
-      </div>
-    </div>
-  );
-}
-
-Hit.propTypes = {
-  hit: PropTypes.object.isRequired,
-};
 
 export default App;

@@ -95,7 +95,34 @@ h1 {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 1rem 1rem 1.5rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.npm-button {
+  margin-left: 0.5rem;
+}
+
+.npm-icon {
+  width: 3rem;
+  height: 1.5rem;
+  fill: #c12127;
+}
+
+.npm-icon:hover {
+  fill: hsl(185, 81%, 29%);
+}
+
+.github-button {
+  margin-left: 0.5rem;
+}
+
+.github-icon:hover {
+  fill: hsl(185, 81%, 29%);
+}
+
+.github-icon {
+  width: 3rem;
+  height: 1.5rem;
 }
 
 .open-button {
