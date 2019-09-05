@@ -65,12 +65,19 @@ function App() {
       >
         <AddNewForm setModalOpen={setModalOpen} />
       </Modal>
-      <InstantSearch indexName="dev_SCALAR_NAME_v2" searchClient={searchClient}>
+      <InstantSearch indexName="dev_SCALAR_NAME_v3" searchClient={searchClient}>
         <SearchBox />
         <div className="left-panel">
           <ClearRefinements />
           <h2 className="filters">Language</h2>
           <RefinementList attribute="language" />
+          <h2 className="filters">Stable (&ge; 1.0)</h2>
+          <RefinementList attribute="is_stable" />
+          <h2 className="filters">Active</h2>
+          <RefinementList attribute="is_current" />
+          <h2 className="filters">No Known vulnerabilities</h2>
+          <RefinementList attribute="is_secure" />
+
           <Configure hitsPerPage={8} />
         </div>
         <div className="right-panel">
