@@ -168,6 +168,13 @@ h1 {
 .ais-CurrentRefinements-item {
   background-color: hsl(210, 22%, 49%);
 }
+.npms {
+  float: right;
+}
+
+.credits {
+  margin-top: 2rem;
+}
 
 @media screen and (max-width: 780px) {
   h1 {

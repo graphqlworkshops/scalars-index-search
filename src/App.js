@@ -16,6 +16,7 @@ import { AddNewForm } from './AddNewForm';
 import './App.css';
 import ReactGA from 'react-ga';
 import { Hit } from './Hit';
+import { Link } from './Link';
 
 const searchClient = algoliasearch(
   '8RFSWE8Z0J',
@@ -86,8 +87,15 @@ function App() {
           <CurrentRefinements />
           <Hits hitComponent={Hit} />
           <Pagination />
-
-          <PoweredBy />
+          <div className="credits">
+            <span className="npms">
+              &nbsp;and metadata by&nbsp;
+              <Link href={'https://npms.io/'} styleName="">
+                npms
+              </Link>
+            </span>
+            <PoweredBy />
+          </div>
           <button
             className="add-button-mobile"
             onClick={() => setModalOpen(true)}
