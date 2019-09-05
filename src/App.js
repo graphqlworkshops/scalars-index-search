@@ -71,6 +71,8 @@ function App() {
           <ClearRefinements />
           <h2 className="filters">Language</h2>
           <RefinementList attribute="language" />
+          <h2 className="filters">Scalars</h2>
+          <RefinementList attribute="scalars" />
           <h2 className="filters">Stable (&ge; 1.0)</h2>
           <RefinementList attribute="is_stable" />
           <h2 className="filters">Active</h2>
